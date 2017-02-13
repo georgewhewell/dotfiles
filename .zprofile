@@ -72,3 +72,8 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+#
+# Nix on Darwin
+#
+if [ -e /Users/grw/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/grw/.nix-profile/etc/profile.d/nix.sh; fi
